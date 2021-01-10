@@ -118,3 +118,28 @@ function setUncolored() {
     cell.classList.remove("uncolored");
   })
 }
+//#8 fill all cells with selected color
+function setAllCurrent() {
+    //gets all cells in table
+    let allCells = document.getElementsByTagName("td");
+    let allCellsList = [...cells];
+
+    // change the background color of each uncolored cell and remove "uncolored" class
+    allCellsList.forEach(cell => {
+        cell.style.backgroundColor = currentColor;
+        cell.classList.remove("uncolored");
+    })
+}
+
+//#9 clear all cells and makes color to original (white)
+function clearAll() {
+    //get all cells in table
+    let allCells = document.getElementsByTagName("td");
+    let allCellsList = [...cells];
+
+    //removes "uncolored" class, change background color to white
+    allCellsList.forEach(cell => {
+        cell.style.backgroundColor = 'white';
+        cell.classList.add("uncolored");
+    })
+}
