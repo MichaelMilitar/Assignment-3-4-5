@@ -1,6 +1,5 @@
 let rows = 1;
 let cols = 1;
-let color = "red"
 let toColor = 0;
 
 //#1  add row to grid
@@ -20,7 +19,6 @@ function addRows() {
 
     mainGrid.appendChild(newRow);
     rows++;
-    document.getElementById("rowcount").innerHTML = "Row Count: " + rows;
 }
 //#2 add column to grid
 function addColumns(){
@@ -48,6 +46,5 @@ function addColumns(){
         }
 
         cols++;
-        document.getElementById("colcount").innerHTML = "Column Count: " + cols;
     }
 }
