@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment #5</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <!-- #1 add row-->
+    <button onclick="addRows()">Add Row</button><br>
+    <!-- #2 add column-->
+    <button onclick="addColumns()">Add Column</button><br>
+    <!-- #3 remove row-->
+    <button onclick="removeRow()">Remove Row</button><br>
+    <!-- #4 remove column-->
+    <button onclick="removeColumn()">Remove Column</button><br>
+    
+    <!-- #5 menu of colors-->
+    <form>
+        <p>
+            <label>Select list</label>
+            <!-- 6 color choice-->
+            <select id="color-select" onchange="setCurrentColor(this.value)"> 
+                <option value="red">red</option>
+                <option value="blue">blue</option>
+                <option value="green">green</option>
+                <option value="yellow">yellow</option>
+            </select>
+        </p>
+    </form>
+
+    <!-- #7 fill all uncolored cells with selected color-->
+    <button onclick="setUncolored()">Fill All uncolored</button>
+    <!-- #8 fill all cells with selected color -->
+    <button onclick="setAllCurrent()">Fill All</button>
+    <!-- #9 clear all cells and changes to original color (white) -->
+    <button onclick="clearAll()">Clear All</button>
+
+    <table id="main-grid">
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    
+    <script src="script2.js"></script>
+</body>
+</html>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     background-color: lightblue;
   }
@@ -6,3 +7,10 @@ body {
     color: navy;
     margin-left: 20px;
   }
+=======
+td {
+    height: 100px;
+    width: 200px;
+    background-color: lightblue;
+}
+>>>>>>> 600e2fd (initial dummy commit)
