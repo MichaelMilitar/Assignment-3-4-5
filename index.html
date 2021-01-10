@@ -11,36 +11,35 @@
     <button onclick="addRows()">Add Row</button><br>
     <!-- #2 -->
     <button onclick="addColumns()">Add Column</button><br>
-     
     <!-- #3 -->
-    <button onclick="removeRows()">Remove Row</button><br>
+    <button onclick="removeRow()">Remove Row</button><br>
     <!-- #4 -->
-    <button onclick="removeCols()">Remove Column</button><br>
+    <button onclick="removeColumn()">Remove Column</button><br>
+    <!-- #5 -->
 
     <form>
         <p>
-            <label>Select Color:</label>
+            <label>Select list</label>
+            <!-- 6 -->
             <select id="color-select" onchange="setCurrentColor(this.value)"> 
-                <option value="##ff0000">Red</option>
-                <option value="##0000ff">Blue</option>
-                <option value="##ffff00">Yellow</option>
-                <option value="#800080">Purple</option>
+                <option value="red">red</option>
+                <option value="blue">blue</option>
+                <option value="green">green</option>
+                <option value="yellow">yellow</option>
             </select>
         </p>
     </form>
-
- <button onclick="setUncolored()">Fill All Empty Cells</button>
- <button onclick="setAllCurrent()">Fill All</button>
- <button onclick="clearAll()">Clear</button>
+    <!-- #7 fill all uncolored cells with selected color-->
+    <button onclick="setUncolored()">Fill All uncolored</button>
 
 
-
-
- <table id="main-grid">
-    <tr>
-        <td class="white-cell" onclick="changeColor(this)" onmousedown="setColorTrue(this)" onmouseover="hoverChangeColor(this)" onmouseup="setColorFalse()"></td>
-    </tr>
-</table>
+    <table id="main-grid">
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    
     <script src="script.js"></script>
 </body>
 </html>
