@@ -7,28 +7,33 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
-
-    <!-- 6 -->
-     <form>
+    <!-- #1 -->
+    <button onclick="addRows()">Add Row</button><br>
+    <!-- #2 -->
+    <button onclick="addColumns()">Add Column</button><br>
+     
+    <form>
         <p>
-            <label>Select list</label>
+            <label>Select Color:</label>
             <select id="color-select" onchange="setCurrentColor(this.value)"> 
-                <option value="##ff0000">red</option>
-                <option value="##0000ff">blue</option>
-                <option value="##ffff00">yellow</option>
-                <option value="#800080">purple</option>
+                <option value="##ff0000">Red</option>
+                <option value="##0000ff">Blue</option>
+                <option value="##ffff00">Yellow</option>
+                <option value="#800080">Purple</option>
             </select>
         </p>
     </form>
 
+ <button onclick="setUncolored()">Fill All Empty Cells</button>
+ <button onclick="setAllCurrent()">Fill All</button>
+ <button onclick="clearAll()">Clear</button>
 
-     <table id="main-grid">
-        <tr>
-            <td></td>
-            <td></td>
-        </tr>
-    </table>
+
+ <table id="main-grid">
+    <tr>
+        <td class="white-cell" onclick="changeColor(this)" onmousedown="setColorTrue(this)" onmouseover="hoverChangeColor(this)" onmouseup="setColorFalse()"></td>
+    </tr>
+</table>
     <script src="script.js"></script>
 </body>
 </html>
